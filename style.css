@@ -1,0 +1,167 @@
+
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+body{
+  font-family: arial,sans-serif;
+  background-color: #286e36;
+  
+}
+header{
+  width:100%;
+  height:300px;
+  background-image: url(danyo.jpg);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position: center;
+  
+}
+header::before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height: 300px;
+  background-color:rgba(0,0,0,0.5);
+}
+header h3,.links{
+  position: relative;
+  color:white;
+  padding:5px;
+  z-index:2;
+}
+header h3{
+  text-transform:capitalize;
+}
+.links{
+  margin: 10px;;
+}
+.links a{
+
+  font-size:22px;
+  border: none;
+  color:black;
+  padding:5px;
+  font-family:Arial, Helvetica, sans-serif ;
+}
+.links p {
+  margin:10px;
+}
+.galery{
+  display:grid;
+  grid-template-rows: repeat(3,1fr);
+  gap:20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.projectcard{
+  position: relative;
+  background-color:#4CAF50;
+  height:200px;
+  color:white;
+  box-shadow:10px 10px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 15px ;
+  padding:5px;
+  margin:10px;
+}
+.project-info{
+  text-align: left; 
+  font-family:initial;
+  width:100%;
+  padding:10px;
+}
+
+
+.projectcard:hover{
+  transform:scale(1.1);
+}
+
+.projectcard a{
+  text-decoration:none;
+  color:black;
+  background-color:white;
+  padding:5px;
+  margin:10px;
+  border:none;
+  border-radius:5px;
+  position: absolute;
+  bottom:0;
+  left:40%;
+}
+.contact-form{
+  background-color: #fff;
+  padding:20px;
+  margin:30px 30% 20px 30%;
+  border-radius:10px;
+  box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+.contact-form label{
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 700;
+
+}
+.contact-form input{
+  width: 100%;
+  padding:8px;
+  margin-bottom:15px;
+  border-radius: 5px;
+  border:1px solid #ccc;
+  font-family: inherit;
+}
+.contact-form button{
+  width:100%;
+  padding:10px;
+  background-color: #4caf50;
+  color:white;
+  border:none;
+  border-radius:5px;
+  font-size:16px;
+  cursor: pointer;
+} 
+main{
+  
+}
+main .header{
+  text-align:center;
+}
+footer{
+  background-color: white;
+  height:100px;
+  text-align: center;
+  
+
+}
+@media (max-width:699px){ .contact-form{
+    margin:10px;
+  }
+}
+@media  (min-width:700px) {
+  .galery{
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+    padding: 20px;
+    text-align: center;
+  }
+  .projectcard{
+    height:300px;
+  }
+ 
+  
+}
+@media  (min-width:701px) {
+  .galery{
+    grid-template-columns:repeat(auto-fit,minmax(600px,1fr));
+    gap:20px;
+    padding: 20px;
+    text-align: center;
+  }
+  header{
+     background-image: url(danyandroniinbeach.jpg);
+     background-position: top;
+  }
+}
