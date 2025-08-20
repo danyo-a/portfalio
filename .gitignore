@@ -1,0 +1,7 @@
+when to use the colors
+
+| `--bg`      | **Page background** — Sets the mood: dark/light, modern/minimal.             |
+| `--text`    | **Main text color** — Use for all body text and general typography.          |
+| `--primary` | **Headings, titles, logos** — Anything you want to stand out more than text. |
+| `--accent`  | **Links, highlights, borders** — Use sparingly to draw attention.            |
+| `--button`  | **Buttons, call-to-action, icons** — Use where you want clicks or attention. |
